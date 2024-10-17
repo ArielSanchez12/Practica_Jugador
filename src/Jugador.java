@@ -3,6 +3,7 @@ public class Jugador {
     int edad;
     String pais;
     int num_jugador;
+    int saltos = 2;
 
     public Jugador() {
         avatar = "Ariel"; //Para constructores vacios no hace falta usar el this.variable = variable
@@ -31,9 +32,10 @@ public class Jugador {
                 ", ha realizado la accion correr");
     }
 
-    public void saltar(){
+    public void saltar(int saltos){
+        saltos += saltos;
         System.out.println("El jugador " + num_jugador + " de nombre: " + avatar +
                 ", edad: " + edad + ", pais: " + pais +
-                ", ha realizado la accion saltar");
+                ", ha realizado la accion saltar " + saltos + " veces");
     }
 }

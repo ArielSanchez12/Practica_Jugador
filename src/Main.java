@@ -10,6 +10,6 @@ public class Main {
         System.out.println("\nAcciones realizadas por el jugador 2: ");
         jugador2.patear();
         jugador2.correr();
-        jugador2.saltar();
+        jugador2.saltar(2);
     }
 }
